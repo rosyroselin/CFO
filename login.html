@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ICICI Bank | Channel Finance Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="ICICI Bank | Channel Finance Online">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<!-- //Head -->
+<!-- Body -->
+<body class="login-bg">
+<!--Loader Start-->
+<div class="portal-throbber" hidden>
+   <div class="mask"></div>
+	<div class="cssload-loader"><span class="cssload-loader-inner"></span></div>
+	<div class="processRequest">Processing your request</div>
+</div>
+<!--Loader End-->
+<!--Header Start-->
+<header>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="logo">
+				<img src="images/logo.png" alt="ICICI CFO" />
+				<span class="logo-title">Channel Finance</span>
+			</div>
+		</div>
+	</div>
+</header>
+<!--Header End-->
+
+<!--Main Container-->
+<main class="login-page">
+    <div class="login-wrap">
+        <div class="login-html">
+            <h5>Channel Finance Online Login</h5>
+            <div class="login-form">
+				<div class="form-block">
+					<div class="form-group">
+						<input id="user" type="text" class="input form-control" placeholder=" " required>
+						<label for="user">Mobile Number</label>
+					</div>
+				</div>
+				<!--hidden otp section-->
+				<div class="hidden-otp" style="display:none;">
+					<div class="form-group">
+						<input id="user" type="password" data-type="password" class="input form-control" placeholder=" "  required>
+						<label for="user">OTP</label>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="button" onclick="window.location.href='index.html';">Login</button>
+						<button type="submit" class="button">Resend OTP</button>
+					</div>
+				</div>
+				<!--hidden otp section-->
+				<div class="form-group">
+					<button type="submit" class="button hide-otp">Send OTP</button>
+				</div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--Main Container-->
+
+<!--Footer Start-->
+<footer>Powered by Servosys Solutions</footer>
+<!--Footer End-->
+</body>
+</html>

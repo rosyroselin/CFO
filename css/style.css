@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i'); 
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'); 
+@import url('https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css'); 
+html, body {margin:0;  padding:0;  width:100%;  height:100%; }
+body{margin:0;  color:#8e8e8e;  font:400 12px/14px 'Roboto', sans-serif;}
+.login-bg{background:url(../images/background.png) no-repeat center center;   background-position:center center;  background-attachment:fixed;  background-repeat:no-repeat;  background-size:cover;}
+
+.clearfix:after,.clearfix:before{content:'';  display:table;}
+.clearfix:after{clear:both; display:block;}
+/*HEADER CSS*/
+header{background:#fff url(../images/header-bg.png) no-repeat right center;  position:fixed;  width:100%;  z-index:9;  top:0;  -webkit-box-shadow:0 5px 8px 0 rgba(0,0,0,0.4);  box-shadow:0 5px 8px 0 rgba(0,0,0,0.4); -webkit-transition:all 0.4s ease; 	transition:all 0.4s ease;}
+.logo-title{color:#263573;  font-size:1.5em;  text-transform:uppercase;  vertical-align:middle;  display:inline-block}
+
+
+/*Login Page*/
+.login-wrap{width:100%;  margin:0 auto;  max-width:40%;  min-height:100%;  position:absolute;  right:0;  }
+.login-html{width:100%;  height:100%;  overflow:hidden;  position:absolute;  padding:40% 2em;}
+.login-form{background:#fff;  padding:1em 2em 4em;}
+.login-form label{color:#8e8e8e;  font-weight:normal;  font-size:12px;}
+.login-form input[data-type="password"]{text-security:circle;  -webkit-text-security:circle;}
+.login-form input{background#fff;  border-radius:10px;  padding:.5em;}
+.button{background: -moz-linear-gradient(left, #f47920 0%, #f43420 100%); background: -webkit-linear-gradient(left, #f47920 0%,#f43420 100%); background: linear-gradient(to right, #f47920 0%,#f43420 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', endColorstr='#f43420',GradientType=1 );  color:#fff;  border:none;  text-align:center;  cursor:pointer;  padding:10px;  float:right}
+.login-page{margin-top:0;  height:100%;}
+.login-html h5{color:#fff;  margin-bottom:2px;  font-size:1.4em;  font-weight:300;  padding:1em;  background: #f47920;  background: -moz-linear-gradient(left, #f47920 0%, #f43420 100%); background: -webkit-linear-gradient(left, #f47920 0%,#f43420 100%); background: linear-gradient(to right, #f47920 0%,#f43420 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', endColorstr='#f43420',GradientType=1 );}
+main{margin-top:75px;  position:relative;  width:100%;}
+
+/*Form CSS*/
+.form-group{position:relative;  margin:2em 0 .5em;}
+.highlight,label{position:absolute}
+.form-control,.form-control-select{font-size:14px;  padding:4px;  display:block;  width:100%;  outline:none;  height:30px;  background-color:transparent;  border:0;  border-radius:none;  box-shadow:none;  border-bottom:1px solid #999;}
+input:focus, textarea:focus, select:focus{outline: none;}
+.form-control-select:focus,.form-control:focus{outline:0;  border-bottom:2px solid #5264AE}
+label{color:#777777;  font-size:12px;  font-weight:400;  left:10px;  top:10px;  transition:.2s ease all;  -moz-transition:.2s ease all;  -webkit-transition:.2s ease all}
+.form-control:focus~label,.form-control:not(:placeholder-shown)~label{top:-18px;  font-size:13px;  color:#2d3b78}
+.form-control-select:focus~label,.form-control-select:not([value=""]):valid~label{top:-18px;  font-size:14px;  color:#2d3b78}
+.form-control-select:focus~.bar:after,.form-control-select:focus~.bar:before,.form-control:focus~.bar:after,.form-control:focus~.bar:before{width:50%}
+*,:after,:before{-webkit-box-sizing:border-box;  -moz-box-sizing:border-box;  box-sizing:border-box}
+.floating-textarea{min-height:30px;  max-height:260px;  overflow:hidden;  overflow-x:hidden}
+.highlight{height:50%;  width:100%;  top:15%;  left:0;  opacity:.5}
+.form-control-select:focus~.highlight,.form-control:focus~.highlight{-webkit-animation:inputHighlighter .3s ease;  -moz-animation:inputHighlighter .3s ease;  animation:inputHighlighter .3s ease}
+@-webkit-keyframes inputHighlighter{from{background:#5264AE}to{width:0;  background:0 0}}
+@-moz-keyframes inputHighlighter{from{background:#5264AE}to{width:0;  background:0 0}}
+@keyframes inputHighlighter{from{background:#5264AE}to{width:0;  background:0 0}}
+.form-control{font-size:12px;}
+select.form-control:not([size]):not([multiple]){height:2.5em}
+
+
+/*Internal Pages*/
+.innerpages{position:relative; width:100%; overflow:auto;}
+
+/*FOOTER CSS*/
+footer{background:#fff url(../images/footer-bg.png) no-repeat bottom left;  background-size:cover;  height:20px;  width:100%;  position:fixed;  bottom:0; line-height:20px; padding-left:5px; font-size:9px;}
+
+
+/*LOADER CSS*/
+.loading{position:absolute;  left:50%;  top:50%;  z-index:2;  padding:20px;  margin-left:-80px;  width:200px;  color:#000}
+.mask{position:fixed; display:block; left:0; top:0; right:0; bottom:0; height:100%; z-index:9999; background-color:rgba(0,0,0,.5)}
+.cssload-loader{position:fixed; top:47%; left:0; right:0; margin:0 auto; width:29px; height:29px; border:4px solid #e77817; z-index:9999; animation:cssload-loader 2.3s infinite ease; -o-animation:cssload-loader 2.3s infinite ease; -ms-animation:cssload-loader 2.3s infinite ease; -webkit-animation:cssload-loader 2.3s infinite ease; -moz-animation:cssload-loader 2.3s infinite ease}
+.field-loader .cssload-loader{position:relative; top:auto; left:auto; right:auto; margin:auto; width:10px; height:10px; border:1px solid #e77817; z-index:9999; animation:cssload-loader 2.3s infinite ease; -o-animation:cssload-loader 2.3s infinite ease; -ms-animation:cssload-loader 2.3s infinite ease; -webkit-animation:cssload-loader 2.3s infinite ease; -moz-animation:cssload-loader 2.3s infinite ease}
+.cssload-loader-inner{vertical-align:top; display:inline-block; width:100%; background-color:#d1cfbb; animation:cssload-loader-inner 2.3s infinite ease-in; -o-animation:cssload-loader-inner 2.3s infinite ease-in; -ms-animation:cssload-loader-inner 2.3s infinite ease-in; -webkit-animation:cssload-loader-inner 2.3s infinite ease-in; -moz-animation:cssload-loader-inner 2.3s infinite ease-in}
+
+
+/*TABLE CSS STARTS*/
+.table-wrapper {background:#fff; position:relative; margin:30px 0 0; width:1800px; border-radius:3px; box-shadow:0 1px 1px rgba(0,0,0,.05);}
+.table-title {background:#273675; color:#fff;}
+.table-title h2 {margin:8px 0 0 10px; font-size:18px;}
+.table-title .btn-group {float:none;}
+.table-title .btn {color:#fff; float:none; font-size:13px; border:none; min-width:50px; border-radius:2px; border:none; outline:none !important; margin-left:10px;}
+.table-title .btn i {float:left; font-size:21px; margin-right:5px;}
+.table-title .btn span {float:left; margin-top:2px;}
+table.table{}
+table.table tr th, table.table tr td {border-color:#e9e9e9; padding:12px 15px; vertical-align:middle;}
+table.table tr th:first-child {width:60px;}
+table.table tr th:last-child {width:100px;}
+table.table-striped tbody tr:nth-of-type(odd) {background-color:#fcfcfc;}
+table.table-striped.table-hover tbody tr:hover {background:#f5f5f5;}
+table.table th i {font-size:13px; margin:0 5px; cursor:pointer;}	
+table.table td:last-child i {opacity:0.9; font-size:22px; margin:0 5px;}
+table.table td a {font-weight:bold; color:#566787; display:inline-block; text-decoration:none; outline:none !important;}
+table.table td a:hover {color:#fff;}
+table.table td a.edit {color:#FFC107;}
+table.table td a.delete {color:#F44336;}
+table.table td i {font-size:19px;}
+table.table .avatar {border-radius:50%; vertical-align:middle; margin-right:10px;}
+.pagination {float:right; margin:0 0 5px;}
+.pagination li a {border:none; font-size:13px; min-width:30px; min-height:30px; color:#999 !important; margin:0 2px; line-height:30px; border-radius:2px !important; text-align:center; padding:0 6px;}
+.pagination li a:hover {color:#666;}	
+.pagination li.active a, .pagination li.active a.page-link {background:#f98d2b; border:1px solid #fff; color:#fff !important; }
+.pagination li.active a:hover {background:#f07f19;}
+.pagination li.disabled i {color:#ccc;}
+.pagination li i {font-size:16px; padding-top:6px;}
+.hint-text {float:left; margin-top:10px; font-size:13px;}    
+/* Custom checkbox */
+.custom-checkbox {position:relative;}
+.custom-checkbox input[type="checkbox"] {    
+opacity:0; position:absolute; margin:5px 0 0 3px; z-index:9;}
+.custom-checkbox label:before{width:18px; height:18px;}
+.custom-checkbox label:before {content:''; margin-right:10px; display:inline-block; vertical-align:text-top; background:white; border:1px solid #bbb; border-radius:2px; box-sizing:border-box; z-index:2;}
+.custom-checkbox input[type="checkbox"]:checked + label:after {content:''; position:absolute; left:6px; top:3px; width:6px; height:11px; border:solid #000; border-width:0 3px 3px 0; transform:inherit; z-index:3; transform:rotateZ(45deg);}
+.custom-checkbox input[type="checkbox"]:checked + label:before {border-color:#f98d2b; background:#f98d2b;}
+.custom-checkbox input[type="checkbox"]:checked + label:after {border-color:#fff;}
+.custom-checkbox input[type="checkbox"]:disabled + label:before {color:#b8b8b8; cursor:auto; box-shadow:none; background:#ddd;}
+/* Modal styles */
+.modal .modal-dialog {max-width:450px; z-index:99}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {padding:20px 30px;}
+.modal .modal-content {border-radius:3px;}
+.modal .modal-footer {background:#ecf0f1; border-radius:0 0 3px 3px;}
+.modal .modal-title {display:inline-block;}
+.modal .form-control {border-radius:2px; box-shadow:none; border-color:#dddddd;}
+.modal textarea.form-control {resize:vertical;}
+.modal .btn {border-radius:2px; min-width:100px;}	
+.modal form label {font-weight:normal;}
+/*TABLE CSS END*/
+
+
+@media only screen and (max-width:768px) {.login-html{padding:20% 2em}
+.login-wrap {max-width:80%;  left:10%;  right:10%;}
+.logo-title{float:right;  margin:1.5em 2em 0 0;  color:#fff;}
+}
+
+@media only screen and (max-width:475px) {.logo img{width:200px;}.logo-title{ margin:1.2em 1em 0 0;}
+}
+
+@media only screen and (max-width:414px) {header{background:#fff url(../images/header-bg.png) repeat-y right top;  background-size:50% 50%;}
+.login-html{padding:35% 0;}
+.logo img{width:150px;}
+.logo-title{ margin:1em 1em 0 0;  font-size:1.2em;}
+}
+
+@media only screen and (max-width:375px) {
+.login-html{padding:50% 0;}
+}

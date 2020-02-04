@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ICICI Bank | Channel Finance Online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="ICICI Bank | Channel Finance Online">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<!-- //Head -->
+<!-- Body -->
+<body>
+<!--Loader Start-->
+<div class="portal-throbber" hidden>
+   <div class="mask"></div>
+	<div class="cssload-loader"><span class="cssload-loader-inner"></span></div>
+	<div class="processRequest">Processing your request</div>
+</div>
+<!--Loader End-->
+<!--Header Start-->
+<header>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="logo">
+				<img src="images/logo.png" alt="ICICI CFO" />
+				<span class="logo-title">Channel Finance</span>
+			</div>
+		</div>
+	</div>
+</header>
+<!--Header End-->
+
+<!--Main Container-->
+<main>
+	<div class="innerpages">
+		<div class="container-fluid">
+			<div class="table-wrapper">
+				<table class="table table-striped table-hover" border="0">
+					<thead class="table-title">
+						<tr>
+							<td colspan="16">
+								<div class="row">
+									<div class="col-sm-3">
+										<h2>Corporate Lead Input</h2>
+									</div>
+									<div class="col-sm-9">
+										<a href="#addCorporateLeadModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Corporate Lead</span></a>
+										<a href="#deleteCorporateLeadModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+									</div>
+								</div>
+							</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="selectAll">
+									<label for="selectAll"></label>
+								</span>
+							</th>
+							<th>Name of the Firm</th>
+							<th>Constitution</th>
+							<th>PAN Card of firm</th>
+							<th>Name of concerned Dealer</th>
+							<th>Mobile Number</th>
+							<th>Email ID</th>
+							<th>Address</th>
+							<th>No. of years of association</th>
+							<th>Last 12 months Sales to dealer</th>
+							<th>Cheque returns in last available 12 months</th>
+							<th>Instances of Overdue more than 7 days in last available 12 months</th>
+							<th>Month</th>
+							<th>Year</th>
+							<th>Sales to dealer</th>
+							<th>Actions</th>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox1" name="options[]" value="1">
+									<label for="checkbox1"></label>
+								</span>
+							</td>
+							<td>ABC Company</td>
+							<td>Proprietorship Firm</td>
+							<td>APNDQ9832D</td>
+							<td>Dealer</td>
+							<td>XXXXXXXXXX</td>
+							<td>xx@xx.xxx</td>
+							<td>XXXXXXX</td>
+							<td>XX</th>
+							<td>XX</td>
+							<td>XX</td>
+							<td>XX</td>
+							<td>January</td>
+							<td>2012</td>
+							<td>XXXX</td>
+							<td>
+								<a href="#editCorporateLeadModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteCorporateLeadModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox2" name="options[]" value="1">
+									<label for="checkbox2"></label>
+								</span>
+							</td>
+							<td>ABC Company</td>
+							<td>Partnership Firm</td>
+							<td>APNDQ9832D</td>
+							<td>Dealer</td>
+							<td>XXXXXXXXXX</td>
+							<td>xx@xx.xxx</td>
+							<td>XXXXXXX</td>
+							<td>XX</th>
+							<td>XX</td>
+							<td>XX</td>
+							<td>XX</td>
+							<td>April</td>
+							<td>2015</td>
+							<td>XXXX</td>
+							<td>
+								<a href="#editCorporateLeadModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteCorporateLeadModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox3" name="options[]" value="1">
+									<label for="checkbox3"></label>
+								</span>
+							</td>
+							<td>ABC Company</td>
+							<td>Private Limited</td>
+							<td>APNDQ9832D</td>
+							<td>Dealer</td>
+							<td>XXXXXXXXXX</td>
+							<td>xx@xx.xxx</td>
+							<td>XXXXXXX</td>
+							<td>XX</th>
+							<td>XX</td>
+							<td>XX</td>
+							<td>XX</td>
+							<td>August</td>
+							<td>2013</td>
+							<td>XXXX</td>
+							<td>
+								<a href="#editCorporateLeadModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteCorporateLeadModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox4" name="options[]" value="1">
+									<label for="checkbox4"></label>
+								</span>
+							</td>
+							<td>ABC Company</td>
+							<td>Limited Liability Partnership</td>
+							<td>APNDQ9832D</td>
+							<td>Dealer</td>
+							<td>XXXXXXXXXX</td>
+							<td>xx@xx.xxx</td>
+							<td>XXXXXXX</td>
+							<td>XX</th>
+							<td>XX</td>
+							<td>XX</td>
+							<td>XX</td>
+							<td>October</td>
+							<td>2010</td>
+							<td>XXXX</td>
+							<td>
+								<a href="#editCorporateLeadModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteCorporateLeadModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr>					
+						<tr>
+							<td>
+								<span class="custom-checkbox">
+									<input type="checkbox" id="checkbox5" name="options[]" value="1">
+									<label for="checkbox5"></label>
+								</span>
+							</td>
+							<td>ABC Company</td>
+							<td>Public Limited</td>
+							<td>APNDQ9832D</td>
+							<td>Dealer</td>
+							<td>XXXXXXXXXX</td>
+							<td>xx@xx.xxx</td>
+							<td>XXXXXXX</td>
+							<td>XX</th>
+							<td>XX</td>
+							<td>XX</td>
+							<td>XX</td>
+							<td>June</td>
+							<td>2010</td>
+							<td>XXXX</td>
+							<td>
+								<a href="#editCorporateLeadModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+								<a href="#deleteCorporateLeadModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+							</td>
+						</tr> 
+					</tbody>
+				</table>
+				<div class="clearfix">
+					<div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+					<ul class="pagination">
+						<li class="page-item disabled"><a href="#">Previous</a></li>
+						<li class="page-item"><a href="#" class="page-link">1</a></li>
+						<li class="page-item"><a href="#" class="page-link">2</a></li>
+						<li class="page-item active"><a href="#" class="page-link">3</a></li>
+						<li class="page-item"><a href="#" class="page-link">4</a></li>
+						<li class="page-item"><a href="#" class="page-link">5</a></li>
+						<li class="page-item"><a href="#" class="page-link">Next</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--MODAL START-->
+	<!-- Add Corporate Lead Modal HTML -->
+	<div id="addCorporateLeadModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">						
+						<h4 class="modal-title">Add Corporate Lead</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">					
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Name of the Firm</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" onclick="this.setAttribute('value', this.value);" value="" required="">
+								<option value=""></option>
+								<option>Proprietorship Firm</option>
+								<option>Partnership Firm</option>
+								<option>Private Limited</option>
+								<option>Public Limited</option>
+								<option>Limited Liability Partnership</option>
+							</select>
+							<label>Constitution</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>PAN Card of firm</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Name of concerned Dealer</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Mobile Number</label>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder=" " required>
+							<label>Email</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Address</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>No. of years of association</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Last 12 months Sales to dealer</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Cheque returns in last available 12 months</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Instances of Overdue more than 7 days in last available 12 months</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" onclick="this.setAttribute('value', this.value);" value="" required="">
+								<option value=""></option>
+								<option value="jan">January</option>
+								<option value="feb">February</option>
+								<option value="mar">March</option>
+								<option value="apr">April</option>
+								<option value="may">May</option>
+								<option value="jun">June</option>
+								<option value="jul">July</option>
+								<option value="aug">August</option>
+								<option value="sep">September</option>
+								<option value="oct">October</option>
+								<option value="nov">November</option>
+								<option value="dec">December</option>
+							</select>
+							<label>Month</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" onclick="this.setAttribute('value', this.value);" value="" required="">
+								<option value=""></option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+							</select>
+							<label>Year</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Sales to dealer</label>
+						</div>					
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-success" value="Add">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Edit Corporate Lead Modal HTML -->
+	<div id="editCorporateLeadModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">						
+						<h4 class="modal-title">Edit Corporate Lead</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">					
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Name of the Firm</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" onclick="this.setAttribute('value', this.value);" value="" required="">
+								<option value=""></option>
+								<option>Proprietorship Firm</option>
+								<option>Partnership Firm</option>
+								<option>Private Limited</option>
+								<option>Public Limited</option>
+								<option>Limited Liability Partnership</option>
+							</select>
+							<label>Constitution</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>PAN Card of firm</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Name of concerned Dealer</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Mobile Number</label>
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" placeholder=" " required>
+							<label>Email</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Address</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>No. of years of association</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Last 12 months Sales to dealer</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Cheque returns in last available 12 months</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Instances of Overdue more than 7 days in last available 12 months</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" onclick="this.setAttribute('value', this.value);" value="" required="">
+								<option value=""></option>
+								<option value="jan">January</option>
+								<option value="feb">February</option>
+								<option value="mar">March</option>
+								<option value="apr">April</option>
+								<option value="may">May</option>
+								<option value="jun">June</option>
+								<option value="jul">July</option>
+								<option value="aug">August</option>
+								<option value="sep">September</option>
+								<option value="oct">October</option>
+								<option value="nov">November</option>
+								<option value="dec">December</option>
+							</select>
+							<label>Month</label>
+						</div>
+						<div class="form-group">
+							<select class="form-control-select" onclick="this.setAttribute('value', this.value);" value="" required="">
+								<option value=""></option>
+								<option value="2019">2019</option>
+								<option value="2018">2018</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+							</select>
+							<label>Year</label>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder=" " required>
+							<label>Sales to dealer</label>
+						</div>					
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-info" value="Save">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Delete Corporate Lead Modal HTML -->
+	<div id="deleteCorporateLeadModal" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">						
+						<h4 class="modal-title">Delete Corporate Lead</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					</div>
+					<div class="modal-body">					
+						<p>Are you sure you want to delete these Records?</p>
+						<p class="text-warning"><small>This action cannot be undone.</small></p>
+					</div>
+					<div class="modal-footer">
+						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+						<input type="submit" class="btn btn-danger" value="Delete">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--MODAL END-->
+
+</main>
+<!--Main Container-->
+
+<!--Footer Start-->
+<footer>Powered by Servosys Solutions</footer>
+<!--Footer End-->
+</body>
+</html>
